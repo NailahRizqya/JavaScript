@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Penjumlahan Dua Bilangan</title>
+    <style>
+        /* CSS sederhana agar tampilan lebih rapi */
+        body { font-family: Arial, sans-serif; }
+        input[type="text"], input[type="number"] {
+            font-size: 24px;
+            text-align: center;
+            width: 100px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .operator { font-size: 30px; margin: 0 10px; }
+        .result-box { 
+            border: 2px solid black; 
+            padding: 10px; 
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Kalkulator Penjumlahan Sederhana</h2>
+
+    <div class="result-box">
+        <input type="text" id="bil1" value="4" onchange="hitungJumlah()" onkeyup="hitungJumlah()"> 
+        <div class="operator">+</div>
+        <input type="text" id="bil2" value="5" onchange="hitungJumlah()" onkeyup="hitungJumlah()">
+        <div class="operator">=</div>
+        <input type="text" id="hasil" value="" readonly>
+    </div>
+    
+    <p style="margin-top: 20px;">*Hasil akan berubah otomatis saat Anda mengetik atau mengubah nilai pada kotak input.</p>
+
+    <script src="kode.js"></script>
+
+</body>
+</html>
