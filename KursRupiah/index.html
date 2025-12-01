@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Kurs Rupiah</title>
+</head>
+<body>
+
+    <h2>Konversi Rupiah ke Dollar ($)</h2>
+
+    <form id="frm_kurs">
+        <label for="jumlah_rupiah">Jumlah Uang (Rupiah):</label>
+        <input type="text" id="jumlah_rupiah" name="jumlah_rupiah" value="146500" size="15" required/>
+        <input type="button" value="Konversi" onclick="hitungKurs()"/>
+    </form>
+
+    <hr/>
+
+    <div style="border: 2px solid #28a745; padding: 15px; margin-top: 20px;">
+        <p>Kurs: 1 $ = 14.650 Rupiah</p>
+        <p>Nilai dalam Dollar ($): <span id="hasil_dollar"></span></p>
+    </div>
+
+    <script src="basic.js"></script>
+
+</body>
+</html>
